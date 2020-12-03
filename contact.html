@@ -22,57 +22,34 @@
         </nav>
       </header>
       <img src="./images/contact.png" class="image_area" alt="">
-      <div class="wrapper clearfix">
-        <aside class="side_menu">
-          <nav>
-            <ul>
-              <li><a href="#">事業内容</a></li>
-              <li><a href="#">会社概要</a></li>
-              <li><a href="#" class="point">お問い合わせ</a></li>
-            </ul>
-          </nav>
-        </aside>
+      <div class="wrapper">
         <article class="content">
-            <form>
-              <table class="form">
-                <tr>
-                  <th>お名前</th>
-                  <td>
-                    <input type="text" value="">
-                  </td>
-                </tr>
-                <tr>
-                  <th>メールアドレス</th>
-                  <td>
-                    <input type="text">
-                  </td>
-                </tr>
-                <tr>
-                  <th>性別</th>
-                  <td>
-                    <span><input type="checkbox">男</span>
-                    <span><input type="checkbox">女</span>
-                  </td>
-                </tr>
-                <tr>
-                  <th>職業</th>
-                  <td>
+            <form class="form">
+              <h1>CONTACT</h1>
+                <dl>
+                  <dt>お名前<span class="required">必須</span></dt>
+                  <dd><input class="input_t" type="text" value=""></dd>
+                  <dt>メールアドレス<span class="required">必須</span></dt>
+                  <dd><input class="input_t" type="text"></dd>
+                  <dt>性別</dt>
+                  <dd>
+                  <span><input type="checkbox">男</span>
+                  <span><input type="checkbox">女</span>
+                  <span><input type="checkbox">その他</span>
+                  </dd>
+                  <dt>職業</dt>
+                  <dd>
                     <span><input type="radio">会社員</span>
                     <span><input type="radio">専業主婦</span>
                     <span><input type="radio">学生</span>
                     <span><input type="radio">その他</span>
-                  </td>
-                </tr>
-                <tr class="contact-top">
-                  <th>お問い合わせ内容</th>
-                  <td>
-                    <textarea class="contact" rows="5" cols="20" placeholder="お問い合わせ内容を入力してください"></textarea>
-                  </td>
-                </tr>
-              </table>
-              <div>
-                <input class="submit-btn" type="submit" value="送 信">
-              </div>
+                  </dd>
+                  <dt>お問い合わせ内容<span class="required">必須</span></dt>
+                  <dd>
+                    <textarea class="contact" rows="10" cols="40" placeholder="お問い合わせ内容を入力してください"></textarea>
+                  </dd>
+                </dl>
+                <div class="btn"><button type="submit">送信</button></div>
             </form>
         </article>
       </div>

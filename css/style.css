@@ -104,8 +104,7 @@ li{
 
 .content{
   width: 660px;
-  margin-left: 20px;
-  float: left;
+  margin: 20px auto;
   font-size: 1.5rem;
 }
 
@@ -160,41 +159,74 @@ li{
 
 /* お問い合わせーーーーーーーーーーーーーーーーー */
 
-.form th{
-  width: 150px;
-  height: 7rem;
-  text-align: right;
-  color: black;
+.wrapper {
+  height: 100%;
 }
 
-.form td>input{
-  width:480px;
+.wrapper form{
+  width:  80%;
+  margin: 2% auto 3%;
+  padding: 3% 5%;
+  background: #fafafa;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px grey;
+  color: #4d4d4d;
 }
 
-.form td{
-  padding-left: 30px;
-}
-
-.submit-btn{
-  font-size: 2rem;
-  border: none;
-  color:#ffffff;
-  background-color: #20b2aa;
-  width: 70px;
-  height: 40px;
-}
-
-.submit-btn:hover{
-  opacity: 0.5
-}
-
-.content form div{
+.wrapper form h1{
   text-align: center;
 }
 
-.contact {
-  height: 5rem;
+.wrapper form dl dd{
+  margin: 0.25em 0 1.25em;
 }
-.contact-top{
-  vertical-align: top;
+
+.wrapper input,button,textarea{
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-sizing: border-box;
+}
+
+.wrapper input,textarea{
+  background: #ededed;
+  border-radius: 3px;
+  padding:1em 0.5em;
+}
+
+.wrapper input_t{
+  width: 70%;
+}
+
+.wrapper textarea{
+  resize: none;
+  width: 90%;
+}
+
+.wrapper .btn{
+  display: block;
+  width:160px;
+  padding:  0.8em;
+  background: #f5b4b3;
+  color: #ffffff;
+  font-size: 1rem;
+  border-bottom: 2px solid #f48584;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.wrapper .btn:active{
+  border-bottom: 2px solid #f5b4b3;
+  box-shadow: 0 0 2px rgba(0,0,0,0,30)
+}
+
+.wrapper form dt span.required {
+    margin-left: 10px;
+    padding: 1px 3px;
+    background-color: #f45555;
+    font-size: 10px;
+    color: #ffffff;
 }
