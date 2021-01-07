@@ -49,13 +49,33 @@
                     <textarea class="contact" rows="10" cols="40" placeholder="お問い合わせ内容を入力してください"></textarea>
                   </dd>
                 </dl>
-                <div class="btn"><button type="submit">送信</button></div>
+                <div class="btn js-modal-open" data-target="modal01"><button type="submit">送信</button></div>
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+                <script>
+                  $(function(){
+                    $('.js-modal-open').on('click', function(){
+                      var target = $(this).data('target');
+                      var modal = document.getElementById(target);
+                      $(modal).fadeIn(500);
+                    });
+                  });
+                </script>
             </form>
         </article>
+        <div id="modal01" class="c-modal js-modal">
+          <div class="c-modal_bg js-modal-close"></div>
+           <div class="c-modal_content _lg">
+              <div class="c-modal_content_inner">
+                  こちらの内容でよろしいですか？
+                  <a class="js-modal-close c-modal_close" href=""><span>はい</span></span></a>
+              </div>
+          </div>
+      </div>
       </div>
       <footer class="footer">
         <p>Copyright©️2018 DIVE INC ALL RIGHT RESERVED.</p>
       </footer>
     </div>
   </body>
+
 </html>
