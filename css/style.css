@@ -275,11 +275,15 @@ li{
 .c-modal_content_inner {
     position: relative;
     padding: 24px;
+    text-align:center;
 }
 
+.c-modal_content_inner p{
+  font-size: 1.5rem;
+}
 /* // 閉じるボタン */
 .c-modal_close {
-    position: absolute;
+    /* position: absolute; */
     top: 13px;
     right: 10px;
 }
